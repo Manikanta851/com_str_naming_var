@@ -1,0 +1,10 @@
+a = input()
+c = len(a)
+b = ord(a[0])
+for i in range(1,c):
+    if ord(a[i]) < b:
+        b = ord(a[i])
+
+
+        
+print(chr(b))

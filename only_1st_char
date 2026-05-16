@@ -1,0 +1,15 @@
+a = input()
+c = ""
+first_word = True
+for i in a :
+    if i == " " :
+        c += i
+        first_word = True 
+    else :
+        if first_word :
+            b = ord(i) + 1 
+            c += chr(b)
+            first_word = False
+        else:
+            c += i
+print(c)

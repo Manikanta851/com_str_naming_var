@@ -1,0 +1,22 @@
+a = int(input())
+A = 65
+for i in range(a):
+    l_s = (a-i-1) * " "
+    hollow = (2 * i - 1) * " "
+    if i == 0 :
+        pattern = l_s + chr(A)
+        A += 1 
+    else :
+        pattern = l_s + chr(A) + hollow + chr(A)
+        A += 1 
+    print(pattern)
+A -= 2
+for i in range(1,a):
+    l_s = i * " "
+    hollow = (2*(a-i-1)-1) * " "
+    if i == a-1 :
+        print(l_s+chr(A))
+        A -= 1
+    else :
+        print(l_s+chr(A)+hollow+chr(A))
+        A -= 1

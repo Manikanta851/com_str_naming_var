@@ -1,0 +1,9 @@
+given_input = int(input())
+for row in range(1,given_input+1):
+    dots = (given_input - row) * ". " 
+    zeros = row * "0 " + (row - 1) * "0 "
+    print(dots+zeros+dots)
+for row in range(1,given_input):
+    dots = row * ". "
+    zeros = (given_input-row) * "0 " + (given_input-row-1) * "0 "
+    print(dots+zeros+dots)
